@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "attrembed"
+version = "0.1.0"
+description = ""
+authors = ["marlinfiggins <marlinfiggins@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+torch = "^2.6.0"
+transformers = "^4.50.1"
+pandas = "^2.2.3"
+scikit-learn = "^1.6.1"
+matplotlib = "^3.10.1"
+seaborn = "^0.13.2"
+tqdm = "^4.67.1"
+
+
+[tool.poetry.group.dev.dependencies]
+notebook = "^7.3.3"
+black = "^25.1.0"
+pytest = "^8.3.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
