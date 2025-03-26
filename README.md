@@ -35,9 +35,10 @@ You provide a DataFrame with
 
 Example DataFrame:
 
-ID	Text	topic_class	reading_level
-0	Photosynthesis converts sunlight into energy.	Biology	introductory
-1	The trolley problem illustrates moral tradeoffs.	Philosophy	intermediate
+| ID | Text                                           | topic_class | reading_level  |
+|----|------------------------------------------------|-------------|----------------|
+| 0  | Photosynthesis converts sunlight into energy. | Biology     | introductory   |
+| 1  | The trolley problem illustrates moral tradeoffs. | Philosophy  | intermediate   |
 
 We can then load this data frame, compute frozen base embeddings from the model, train classifiers for each attribute, and store a normalized logit embedding per attribute with the following code
 
@@ -58,9 +59,10 @@ manager, ids, texts = build_manager_from_dataframe(
 
 If you already have base embeddings stored in a column, provide a DataFrame like:
 
-ID	Text	Vector	topic_class
-0	Quantum mechanics deals with uncertainty.	[0.1, 0.2, …]	Physics
-1	Genes transmit hereditary information.	[0.3, 0.4, …]	Biology
+| ID | Text                                        | Vector            | topic_class |
+|----|---------------------------------------------|-------------------|-------------|
+| 0  | Quantum mechanics deals with uncertainty.   | [0.1, 0.2, …]     | Physics     |
+| 1  | Genes transmit hereditary information.      | [0.3, 0.4, …]     | Biology     |
 
 Here, `Vector` is a list of floats (e.g., 768-dim). Loading the dataframe including the embeddings, training the classifiers, and storing the embeddings can be done with:
 
