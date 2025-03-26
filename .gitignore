@@ -1,0 +1,78 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Poetry virtual environment (if stored locally)
+.env
+.venv
+
+# Virtual environment folders (just in case)
+env/
+venv/
+
+# Python distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Mac system files
+.DS_Store
+
+# PyTorch & Transformers cache
+~/.cache/torch/
+~/.cache/huggingface/
+
+# Checkpoints / logs / temporary model files
+*.ckpt
+*.pt
+*.pth
+*.log
+*.tmp
+*.bak
+
+# Output artifacts
+logs/
+outputs/
+checkpoints/
+runs/
+saved_models/
+
+# VSCode
+.vscode/
+
+# IPython history
+.history
+
+# Parquet, pickle, and temporary data files
+*.parquet
+*.pkl
+*.joblib
+*.npz
+*.npy
+*.csv
+
+# Dataset cache (optional)
+data/
+.cache/
+
+# Test artifacts
+htmlcov/
+coverage.xml
+.tox/
+.pytest_cache/
+test_outputs/
+
+# Jupyter runtime
+~/.local/share/jupyter/
+
+# Ignore exported experiments
+exports/
